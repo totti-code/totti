@@ -156,7 +156,7 @@ export default function Hero() {
         >
           <h1 className="font-display font-black leading-none mb-2">
             <span className="block text-4xl md:text-6xl lg:text-7xl text-white tracking-tight glitch">
-              SEU NOME
+              TOTTI
             </span>
             <span
               className="block text-5xl md:text-7xl lg:text-8xl mt-1 neon-text-animate"
@@ -167,7 +167,7 @@ export default function Hero() {
                 backgroundClip: 'text',
               }}
             >
-              AQUI
+              ARAUJO
             </span>
           </h1>
         </motion.div>

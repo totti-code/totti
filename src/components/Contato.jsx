@@ -24,8 +24,8 @@ const contacts = [
   {
     icon: FaWhatsapp,
     label: 'WhatsApp',
-    handle: '+55 (85) 9 9999-9999',
-    href: 'https://wa.me/5585999999999',
+    handle: '+55 (85) 98932-6734',
+    href: 'https://wa.me/5585989326734',
     color: '#25d366',
     glow: 'rgba(37,211,102,0.3)',
     desc: 'Mensagem rápida',
@@ -33,8 +33,8 @@ const contacts = [
   {
     icon: FaEnvelope,
     label: 'Email',
-    handle: 'seu@email.com',
-    href: 'mailto:seu@email.com',
+    handle: 'totidev@gmail.com',
+    href: 'mailto:totidev@gmail.com',
     color: '#00d4ff',
     glow: 'rgba(0,212,255,0.3)',
     desc: 'Me escreva',
