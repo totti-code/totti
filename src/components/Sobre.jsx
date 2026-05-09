@@ -3,7 +3,7 @@ import { motion, useInView } from 'framer-motion'
 import { FaGraduationCap, FaLaptopCode, FaRocket } from 'react-icons/fa'
 
 const highlights = [
-  { icon: FaGraduationCap, label: 'ADS', desc: 'Análise e Des. de Sistemas' },
+  { icon: FaGraduationCap, label: 'ADS', desc: 'Analise e Des. de Sistemas' },
   { icon: FaLaptopCode, label: 'Full Stack', desc: 'Front-end & Back-end' },
   { icon: FaRocket, label: 'Projetos', desc: 'Foco em Resultados' },
 ]
@@ -14,14 +14,12 @@ export default function Sobre() {
 
   return (
     <section id="sobre" className="relative py-28 px-6 overflow-hidden" ref={ref}>
-      {/* Subtle background glow */}
       <div
         className="absolute left-0 top-1/2 -translate-y-1/2 w-96 h-96 rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(0,212,255,0.05) 0%, transparent 70%)' }}
       />
 
       <div className="max-w-6xl mx-auto">
-        {/* Section heading */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -29,7 +27,7 @@ export default function Sobre() {
           className="text-center mb-20"
         >
           <p className="font-mono text-xs text-[#00d4ff] tracking-[0.4em] uppercase mb-4">
-            // 001 — Quem Sou
+            // 001 - Quem Sou
           </p>
           <h2 className="font-display text-4xl md:text-5xl font-black text-white section-title-line">
             SOBRE <span className="text-[#00d4ff]">MIM</span>
@@ -37,32 +35,29 @@ export default function Sobre() {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-16 items-center">
-          {/* Avatar / Visual */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative flex justify-center"
           >
-            {/* Decorative rings */}
             <div className="relative w-64 h-64 md:w-80 md:h-80">
-              {/* Outer ring */}
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
                 className="absolute inset-0 rounded-full border border-dashed border-[rgba(0,212,255,0.2)]"
               />
-              {/* Mid ring */}
               <motion.div
                 animate={{ rotate: -360 }}
                 transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
                 className="absolute inset-6 rounded-full border border-[rgba(0,212,255,0.1)]"
               >
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-[#00d4ff]"
-                  style={{ boxShadow: '0 0 8px #00d4ff' }} />
+                <div
+                  className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-[#00d4ff]"
+                  style={{ boxShadow: '0 0 8px #00d4ff' }}
+                />
               </motion.div>
 
-              {/* Avatar box */}
               <div
                 className="absolute inset-12 glass rounded-full flex items-center justify-center border border-[rgba(0,212,255,0.3)] float-anim overflow-hidden"
                 style={{ boxShadow: '0 0 60px rgba(0,212,255,0.15), inset 0 0 40px rgba(0,212,255,0.05)' }}
@@ -74,7 +69,6 @@ export default function Sobre() {
                 />
               </div>
 
-              {/* Orbiting dots */}
               {[0, 120, 240].map((deg, i) => (
                 <motion.div
                   key={i}
@@ -92,7 +86,6 @@ export default function Sobre() {
             </div>
           </motion.div>
 
-          {/* Text content */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -102,7 +95,7 @@ export default function Sobre() {
             <div className="relative p-6 glass rounded-lg corner-decoration border border-[rgba(0,212,255,0.1)]">
               <p className="font-body text-lg text-slate-300 leading-relaxed">
                 Sou estudante de{' '}
-                <span className="text-[#00d4ff] font-semibold">Análise e Desenvolvimento de Sistemas</span>{' '}
+                <span className="text-[#00d4ff] font-semibold">Analise e Desenvolvimento de Sistemas</span>{' '}
                 apaixonado por tecnologia e desenvolvimento de software.
               </p>
             </div>
@@ -110,11 +103,10 @@ export default function Sobre() {
             <p className="font-body text-base text-slate-400 leading-relaxed px-1">
               Atualmente estudo{' '}
               <span className="text-white font-semibold">HTML, CSS, JavaScript, React, Node.js</span> e{' '}
-              <span className="text-white font-semibold">SQL Server</span>, criando projetos práticos focados em
-              inventário, dashboards e sistemas web.
+              <span className="text-white font-semibold">SQL Server</span>, desenvolvendo solucoes digitais voltadas
+              para softwares web, automacoes, integracoes entre sistemas e melhoria de processos.
             </p>
 
-            {/* Highlight cards */}
             <div className="grid grid-cols-3 gap-3 mt-6">
               {highlights.map(({ icon: Icon, label, desc }, i) => (
                 <motion.div
@@ -131,7 +123,6 @@ export default function Sobre() {
               ))}
             </div>
 
-            {/* Code line decoration */}
             <div className="font-mono text-xs text-slate-600 mt-4 px-1">
               <span className="text-[#00d4ff]">const</span>{' '}
               <span className="text-white">dev</span>{' '}
