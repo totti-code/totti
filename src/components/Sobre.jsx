@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { FaUser, FaGraduationCap, FaLaptopCode, FaRocket } from 'react-icons/fa'
+import { FaGraduationCap, FaLaptopCode, FaRocket } from 'react-icons/fa'
 
 const highlights = [
   { icon: FaGraduationCap, label: 'ADS', desc: 'Análise e Des. de Sistemas' },
@@ -64,10 +64,14 @@ export default function Sobre() {
 
               {/* Avatar box */}
               <div
-                className="absolute inset-12 glass rounded-full flex items-center justify-center border border-[rgba(0,212,255,0.3)] float-anim"
+                className="absolute inset-12 glass rounded-full flex items-center justify-center border border-[rgba(0,212,255,0.3)] float-anim overflow-hidden"
                 style={{ boxShadow: '0 0 60px rgba(0,212,255,0.15), inset 0 0 40px rgba(0,212,255,0.05)' }}
               >
-                <FaUser className="text-6xl text-[#00d4ff] opacity-80" />
+                <img
+                  src={`${import.meta.env.BASE_URL}Totti.jpeg`}
+                  alt="Totti Araujo"
+                  className="h-full w-full object-cover"
+                />
               </div>
 
               {/* Orbiting dots */}
