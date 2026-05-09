@@ -6,8 +6,8 @@ const contacts = [
   {
     icon: FaGithub,
     label: 'GitHub',
-    handle: '@seuuser',
-    href: 'https://github.com/',
+    handle: '@totti-code',
+    href: 'https://github.com/totti-code',
     color: '#e0e0e0',
     glow: 'rgba(200,200,200,0.2)',
     desc: 'Veja meu código',
